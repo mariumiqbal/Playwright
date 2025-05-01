@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariumiqbal/Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariumiqbal/Playwright/issues"
+  },
+  "homepage": "https://github.com/mariumiqbal/Playwright#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}
