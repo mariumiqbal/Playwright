@@ -13,8 +13,15 @@ This repository contains end-to-end tests for different web based project using 
    ```
 
 3. Run test file:
+
    ```bash
-    npx playwright test tests/wixLink.spec.ts
+   npx playwright test tests/wixLink.spec.ts
+   ```
+
+4. Run test in UI mode
+
+   ```bash
+   npx playwright test --ui
    ```
 
 ## Projects
