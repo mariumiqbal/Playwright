@@ -8,7 +8,7 @@ export default defineConfig({
   timeout: 30_000,
 
   // Retry failed tests once
-  retries: 1,
+  retries: 0,
 
   use: {
     // Run tests in headed mode (browser visible)
@@ -25,9 +25,5 @@ export default defineConfig({
   },
 
   // Optional: run tests in multiple browsers
-  projects: [
-    { name: "chromium", use: { ...devices["Desktop Chrome"] } },
-    { name: "firefox", use: { ...devices["Desktop Firefox"] } },
-    { name: "webkit", use: { ...devices["Desktop Safari"] } },
-  ],
+  projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
 });
