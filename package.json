@@ -18,6 +18,9 @@
   "homepage": "https://github.com/mariumiqbal/Playwright#readme",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.52.0"
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.3.3",
+    "dotenv": "^17.2.2",
+    "playwright": "^1.56.1"
   }
 }
