@@ -1,4 +1,5 @@
-import { Page, Locator, expect } from "@playwright/test";
+// pages/PortfolioPage.ts
+import { Page, Locator } from "@playwright/test";
 
 export class PortfolioPage {
   readonly page: Page;
@@ -23,24 +24,11 @@ export class PortfolioPage {
     await this.page.goto("https://mariumiqbal.github.io/dev-portfolio");
   }
 
-  async verifyHomePage() {
-    await expect(this.page).toHaveTitle(/This is my portfolio project/i);
-    await expect(this.heading).toBeVisible();
-  }
-
   async navigateToProjects() {
     await this.projectsLink.click();
   }
 
-  async verifyProjectsCount(count: number) {
-    await expect(this.projectCards).toHaveCount(count);
-  }
-
   async navigateToContact() {
     await this.contactLink.click();
-  }
-
-  async verifyContactEmailVisible() {
-    await expect(this.emailLink).toBeVisible();
   }
 }
